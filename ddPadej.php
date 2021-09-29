@@ -1,7 +1,7 @@
 <?php
 /**
  * ddPadej
- * @version 1.5.2 (2013-09-11)
+ * @version 1.6 (2021-09-29)
  * 
  * @desc The snippet writes correct inflexions for the words connecting with numerals. 
  * 
@@ -10,7 +10,7 @@
  * 
  * @link https://code.divandesign.biz/modx/ddpadej
  * 
- * @copyright 2013 DD Group {@link https://DivanDesign.biz }
+ * @copyright 2013–2021 DD Group {@link https://DivanDesign.biz }
  */
 
 $str = explode(
