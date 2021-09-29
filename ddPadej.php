@@ -6,7 +6,7 @@
  * @desc The snippet writes correct inflexions for the words connecting with numerals. 
  * 
  * @param $str {stringCommaSeparated} - String with inflexions separated by commas “v1,v2,v3”. Where “v1” — inflexion for 10; “v2” — for 1; “v3” — for 2. @required
- * @param $n {float} - Evaluating number. @required
+ * @param $n {float} - Evaluating number. Default: 0.
  * 
  * @link https://code.divandesign.biz/modx/ddpadej
  * 
@@ -17,6 +17,10 @@ $str = explode(
 	',',
 	$str
 );
+
+if (!is_numeric($n)){
+	$n = 0;
+}
 
 preg_match(
 	'/^(.*)(\,|\.)(.*)$/',
